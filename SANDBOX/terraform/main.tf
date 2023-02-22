@@ -7,3 +7,8 @@ resource "aws_budgets_budget" "total_cost" {
   time_period_start = "2022-02-01_00:00"
   time_unit         = "MONTHLY"
 }
+
+resource "aws_security_group" "allow_tls" {
+  name        = "TestingSecurityGroup"
+  description = "TestingSecurityGroup"
+}
