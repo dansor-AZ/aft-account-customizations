@@ -8,6 +8,12 @@ resource "aws_budgets_budget" "total_cost" {
   time_unit         = "MONTHLY"
 }
 
+resource "aws_default_vpc" "default" {
+  tags = {
+    Name = "Default VPC"
+  }
+}
+
 resource "aws_security_group" "allow_tls" {
   name        = "TestingSecurityGroup"
   description = "TestingSecurityGroup"
