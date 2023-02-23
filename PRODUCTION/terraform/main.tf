@@ -14,7 +14,7 @@ resource "aws_default_vpc" "default" {
 
 resource "aws_security_group" "allow_tls" {
   name        = "TestingSecurityGroup2"
-  description = "TestingSecurityGroup2"
+  description = "TestingSecurityGroup3"
 
   depends_on = [
     aws_default_vpc.default
